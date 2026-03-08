@@ -30,7 +30,8 @@ const MusicPlayer = () => {
       <button
         onClick={toggle}
         className="fixed top-4 right-4 z-50 p-3 rounded-full border border-primary/30 bg-muted/50 backdrop-blur-sm text-primary transition-all duration-300 hover:bg-primary/10 active:bg-primary/10"
-        aria-label={muted ? "Unmute music" : "Mute music"}
+        // aria-label={muted ? "Unmute music" : "Mute music"}
+        aria-label={muted ? "Mute music" : "Unmute music"}
       >
         {muted ? <VolumeX size={18} /> : <Volume2 size={18} />}
       </button>
